@@ -1,0 +1,19 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:types"
+rev = "de53d90"
+hash = "5232eccf5ecb3a86c155bdf006574d5b"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "9cd2ac4"
+hash = "63af69ecd0e09f3a7e252828d73abe68"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "9cd2ac4"
+hash = "b5e0a30e0441f32a7c4508a2e6490ce"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "28e1977"
+hash = "e83c95d5193c0d2165e961955e521a15"

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MSVC 2022 x64",
+    "visualStudio": "Visual Studio 17 2022",
+    "visualStudioArchitecture": "x64",
+    "compilers": {
+      "C": "cl.exe",
+      "CXX": "cl.exe"
+    }
+  },
+  {
+    "name": "GCC (MinGW)",
+    "generator": "Ninja",
+    "compilers": {
+      "C": "gcc.exe",
+      "CXX": "g++.exe"
+    }
+  },
+  {
+    "name": "Clang",
+    "compilers": {
+      "C": "clang.exe",
+      "CXX": "clang++.exe"
+    }
+  }
+]

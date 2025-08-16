@@ -1,0 +1,12 @@
+[2m2025-08-12T20:27:22.930096Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\Markus\.glzr/zebar\settings.json
+
+Caused by:
+    key must be a string at line 3 column 3
+[2m2025-08-12T20:29:16.172227Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\Markus\.glzr/zebar\settings.json
+
+Caused by:
+    key must be a string at line 3 column 3
+[2m2025-08-12T20:30:38.608781Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\Markus\.glzr/zebar\settings.json
+
+Caused by:
+    missing field `pack` at line 6 column 5

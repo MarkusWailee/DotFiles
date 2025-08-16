@@ -1,0 +1,69 @@
+
+local wezterm = require('wezterm')
+--local config = {}
+local config = wezterm.config_builder()
+config.default_prog = {"powershell.exe"}
+--config.font = wezterm.font('JetBrains Mono', {weight = "Bold"})
+--config.font = wezterm.font('JetBrains Mono', { weight = 400 })
+--config.font = wezterm.font('RobotoMono Nerd Font Mono', {weight = 600})
+--config.font = wezterm.font('FiraCode Nerd Font', {weight = 400})
+config.font = wezterm.font('CaskaydiaCove NFM', {weight = 400})
+--config.font = wezterm.font('Hack Nerd Font', {weight = 400})
+--config.font = wezterm.font('Comic Shanns Regular', {weight = 400})
+--config.font = wezterm.font('Comic Mono', {weight = 400})
+--config.font = wezterm.font('MesloLGS Nerd Font', {weight = 400})
+--config.font = wezterm.font('Cascadia Code NF', {weight = 400})
+
+config.front_end = "OpenGL"
+config.font_size = 12
+config.window_decorations = "RESIZE"
+config.enable_tab_bar = false
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
+
+config.colors = 
+{
+    background = "#090909",
+    foreground = "#ffffff",
+    cursor_bg = "#ffffff",
+    cursor_border = "white",
+    selection_fg = "white",
+    selection_bg = "#1F1F1F",
+    --scrollbar_thumb = "red"
+    compose_cursor = 'orange',
+}
+
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
+
+config.window_background_opacity = 0.90
+config.foreground_text_hsb = 
+{
+  hue = 1.0,
+  saturation = 1.0,
+  brightness = 1.0, -- Increase brightness
+}
+
+wezterm.on('toggle-opacity', function(window, pane)
+  local overrides = window:get_config_overrides() or {}
+    if overrides.window_background_opacity then
+      overrides.window_background_opacity = nil
+    else
+      overrides.window_background_opacity = 1.0
+    end
+    window:set_config_overrides(overrides);
+end)
+
+
+config.keys = {
+  {
+    key = 'B',
+    mods = 'CTRL',
+    action = wezterm.action.EmitEvent('toggle-opacity'),
+  },
+}
+
+return config
