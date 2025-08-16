@@ -7,7 +7,7 @@ config.default_prog = {"powershell.exe"}
 --config.font = wezterm.font('JetBrains Mono', { weight = 400 })
 --config.font = wezterm.font('RobotoMono Nerd Font Mono', {weight = 600})
 --config.font = wezterm.font('FiraCode Nerd Font', {weight = 400})
-config.font = wezterm.font('CaskaydiaCove NFM', {weight = 400})
+config.font = wezterm.font('CaskaydiaCove NF')
 --config.font = wezterm.font('Hack Nerd Font', {weight = 400})
 --config.font = wezterm.font('Comic Shanns Regular', {weight = 400})
 --config.font = wezterm.font('Comic Mono', {weight = 400})
@@ -20,7 +20,7 @@ config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 
-config.colors = 
+config.colors =
 {
     background = "#090909",
     foreground = "#ffffff",
@@ -40,11 +40,11 @@ config.window_padding = {
 }
 
 config.window_background_opacity = 0.90
-config.foreground_text_hsb = 
+config.foreground_text_hsb =
 {
   hue = 1.0,
   saturation = 1.0,
-  brightness = 1.0, -- Increase brightness
+  brightness = 2.1, -- Increase brightness
 }
 
 wezterm.on('toggle-opacity', function(window, pane)
