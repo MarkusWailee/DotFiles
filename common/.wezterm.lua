@@ -7,7 +7,7 @@ config.default_prog = {"powershell.exe"}
 --config.font = wezterm.font('JetBrains Mono', { weight = 400 })
 --config.font = wezterm.font('RobotoMono Nerd Font Mono', {weight = 600})
 --config.font = wezterm.font('FiraCode Nerd Font', {weight = 400})
-config.font = wezterm.font('CaskaydiaCove NF', {weight = 100})
+config.font = wezterm.font('CaskaydiaCove NF', {weight = 1})
 --config.font = wezterm.font('Hack Nerd Font', {weight = 400})
 --config.font = wezterm.font('Comic Shanns Regular', {weight = 400})
 --config.font = wezterm.font('Comic Mono', {weight = 400})
