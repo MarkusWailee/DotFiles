@@ -7,7 +7,8 @@ config.default_prog = {"powershell.exe"}
 --config.font = wezterm.font('JetBrains Mono', { weight = 400 })
 --config.font = wezterm.font('RobotoMono Nerd Font Mono', {weight = 600})
 --config.font = wezterm.font('FiraCode Nerd Font', {weight = 400})
-config.font = wezterm.font('CaskaydiaCove NF', {weight = 1})
+config.font = wezterm.font('CaskaydiaCove NF', {weight = 1, foreground = "#bdb8ad"})
+--config.font = wezterm.font('CaskaydiaCove NF', {weight = 1, foreground = "#bdb8ad"})
 --config.font = wezterm.font('Hack Nerd Font', {weight = 400})
 --config.font = wezterm.font('Comic Shanns Regular', {weight = 400})
 --config.font = wezterm.font('Comic Mono', {weight = 400})
@@ -25,7 +26,8 @@ config.enable_csi_u_key_encoding = true
 
 config.colors =
 {
-    background = "#0e0e10",
+    background = "#000005",
+    background = "#252525",
     foreground = "#ffffff",
     cursor_bg = "#ffffff",
     cursor_border = "white",

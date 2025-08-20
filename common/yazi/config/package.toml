@@ -17,3 +17,8 @@ hash = "b5e0a30e0441f32a7c4508a2e6490ce"
 use = "gosxrgxx/flexoki-dark"
 rev = "28e1977"
 hash = "e83c95d5193c0d2165e961955e521a15"
+
+[[flavor.deps]]
+use = "bennyyip/gruvbox-dark"
+rev = "e5e1aef"
+hash = "79d0bda6b5ed25c572860fbcca6a9aad"
