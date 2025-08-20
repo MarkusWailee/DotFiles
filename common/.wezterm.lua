@@ -20,9 +20,12 @@ config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 
+--config.enable_kitty_keyboard = true
+config.enable_csi_u_key_encoding = true
+
 config.colors =
 {
-    background = "#090909",
+    background = "#0e0e10",
     foreground = "#ffffff",
     cursor_bg = "#ffffff",
     cursor_border = "white",
@@ -39,7 +42,7 @@ config.window_padding = {
   bottom = 0,
 }
 
-config.window_background_opacity = 0.90
+config.window_background_opacity = 0.95
 config.foreground_text_hsb =
 {
   hue = 1.0,
@@ -57,13 +60,18 @@ wezterm.on('toggle-opacity', function(window, pane)
     window:set_config_overrides(overrides);
 end)
 
-
 config.keys = {
-  {
-    key = 'B',
-    mods = 'CTRL',
-    action = wezterm.action.EmitEvent('toggle-opacity'),
-  },
+    {
+        key = 'B',
+        mods = 'CTRL',
+        action = wezterm.action.EmitEvent('toggle-opacity'),
+    },
+    --{ key = '`', mods = 'CTRL', action = wezterm.action.SendKey {key = '`', mods = 'CTRL'} },
+    {
+        key = '`',
+        mods = 'CTRL',
+        action = wezterm.action.SendKey{ key = "F13" }
+    },
 }
 
 return config
