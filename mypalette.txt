@@ -1,7 +1,0 @@
-"#748DAE"   keywords
-"#ffe091"   user types
-#e0aaff
-"#83A598"   blue_pale
-#6b74b2     blue
-
-

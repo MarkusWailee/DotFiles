@@ -21,12 +21,12 @@ config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 
+config.exit_behavior = 'CloseOnCleanExit'
 --config.enable_kitty_keyboard = true
 config.enable_csi_u_key_encoding = true
 
 config.colors =
 {
-    background = "#000005",
     background = "#252525",
     foreground = "#ffffff",
     cursor_bg = "#ffffff",
